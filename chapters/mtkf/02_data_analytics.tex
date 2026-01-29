@@ -1,0 +1,51 @@
+\section{Technical Area: Data \& Analytics}
+
+A manager with technical judgment does not simply ask for a "dashboard"; they demand a data architecture that does not collapse under load.
+
+\begin{itemize}
+    \item \textbf{Execution Foundation}: Understanding Data Modeling (Dimensional vs. Relational). A manager must know when an ACID database is required (for financial transactions) versus a BASE system (for massive scalability). This knowledge prevents the approval of technologies that could corrupt business integrity.
+    \item \textbf{Authority Metric}: Identifying bottlenecks in pipeline latency. If data takes 4 hours to process, the manager must be able to determine if the cause is the transformation logic (Compute-bound) or the network/storage (I/O-bound).
+\end{itemize}
+
+\subsection{Technical Competency Map: Data Engineering \& Systems}
+
+\begin{table}[H]
+    \centering
+    \caption{Data Engineering Competency Map}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|l|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+    \hline
+    \textbf{Level} & \textbf{Modeling Logic \& Structure} & \textbf{Pipeline Engineering \& Flow} & \textbf{Systems Security \& Governance} & \textbf{Authority Criterion (The "Check")} \\ \hline
+    Basic & Understands normalization (1NF to 3NF) and the difference between SQL and NoSQL. & Identifies ETL/ELT phases and Batch processing concepts. & Familiar with encryption, masking, and Privacy-by-Design principles. & Detects if a data structure compromises software integrity or scalability. \\ \hline
+    Intermediate & Masters dimensional modeling and columnar storage (Parquet/Avro). & Audits DAGs in Airflow/Dagster. Manages retries and engineering dependencies. & Defines RBAC policies and audits access logs and platform security. & Identifies if a failure is Compute-bound (logic) or I/O-bound (infra/network). \\ \hline
+    Advanced & Chooses between Warehouse and Lakehouse based on the CAP Theorem and consistency needs. & Implements CDC (Change Data Capture) and Stream processing (Kafka/Flink). & Implements Data Lineage and observability for error traceability. & Refutes architectures that do not support horizontal scaling or real-time AI training. \\ \hline
+    Expert & Leads Data Mesh design. Masters distributed systems and eventual consistency. & Orchestrates multi-cloud architectures and optimizes tiered storage costs. & Establishes data sovereignty and global compliance (GDPR/HIPAA) at the systems level. & Defines the Data-as-a-Product strategy, ensuring data is ready for AI and software consumption. \\ \hline
+    \end{tabular}%
+    }
+\end{table}
+
+\subsection{Knowledge Tree}
+
+\subsubsection{Level 1: Structure and Query Fundamentals (Basic)}
+\begin{itemize}
+    \item \textbf{Advanced SQL}: Mastery of Window Functions and CTEs for complex data analysis.
+    \item \textbf{Data Modeling}: Differentiation between Star Schema and Snowflake Schema.
+    \item \textbf{Normalization \& Types}: Understanding 1NF through 3NF and the difference between Relational (Postgres) and NoSQL (Mongo/Cassandra) databases.
+    \item \textbf{Lifecycle}: Identification of ETL phases and Batch Processing concepts.
+\end{itemize}
+
+\subsubsection{Level 2: Orchestration and Real-Time Flows (Intermediate)}
+\begin{itemize}
+    \item \textbf{Systems Orchestration}: Auditing flows in Airflow or Dagster, including retry handling and dependency management.
+    \item \textbf{Replication Engineering}: Implementation of Change Data Capture (CDC) for real-time synchronization.
+    \item \textbf{Efficient Storage}: Understanding columnar storage (Parquet/Avro) for massive query optimization.
+    \item \textbf{Systems Diagnosis}: Ability to identify if a delay is Compute-bound (transformation) or I/O-bound (network/disk).
+\end{itemize}
+
+\subsubsection{Level 3: Distributed Architecture and Governance (Advanced)}
+\begin{itemize}
+    \item \textbf{High Availability Systems}: Choosing between Data Warehouse and Data Lakehouse based on eventual consistency and the CAP Theorem.
+    \item \textbf{Data Security}: Implementation of encryption at rest and in transit, alongside granular access control (RBAC).
+    \item \textbf{Lineage and Quality}: Using Data Lineage to track the origin of failures and ensure data observability.
+    \item \textbf{Platform Governance}: Designing Data Mesh architectures and ensuring global regulatory compliance (GDPR/HIPAA) at the infrastructure level.
+\end{itemize}

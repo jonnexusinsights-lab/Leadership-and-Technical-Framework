@@ -1,0 +1,51 @@
+\section{Technical Area: Artificial Intelligence (AI) and Machine Learning}
+
+To make informed decisions about AI, a manager must understand how data is "weighted" and how computation is optimized.
+
+\begin{itemize}
+    \item \textbf{Execution Foundation}: Mastering the concepts of Tensors and Embeddings. It is not enough to know that AI "understands" text; one must understand that it converts text into mathematical vectors within an N-dimensional space. This realization allows the manager to grasp why data quality (cleaning) is more critical than the model itself.
+    \item \textbf{Authority Metric}: Shifting from asking "Does it work?" to asking "What is our error rate on the validation set vs. the test set?" or "How are we managing gradient drift?"
+\end{itemize}
+
+\subsection{Technical Competency Map: AI and Intelligent Systems}
+
+\begin{table}[H]
+    \centering
+    \caption{AI Competency Map}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|l|p{3.5cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+    \hline
+    \textbf{Level} & \textbf{AI Modeling \& Logic} & \textbf{MLOps \& Systems Infrastructure} & \textbf{Ethics, Risk, and ROI} & \textbf{Authority Criterion (The "Check")} \\ \hline
+    Basic & Distinguishes between Supervised, Unsupervised, and Reinforcement Learning. & Understands that models require GPUs/TPUs and the impact of compute on TCO. & Identifies bias risks and the "AI Hierarchy of Needs" (Data before models). & Evaluates if a problem requires AI or if it is solvable via rule-based engineering. \\ \hline
+    Intermediate & Masters concepts of Embeddings, Tokenization, and Context Windows. & Oversees model/data versioning (DVC) and audits inference latency. & Evaluates hallucination risks and establishes technical content Guardrails. & Validates if the AI solution is technically and financially viable compared to statistical methods. \\ \hline
+    Advanced & Technical criteria to choose between RAG (context) and Fine-Tuning (specialization). & Implements agentic architectures and model quantization to optimize systems. & Audits Technical ROI: Balance between inference cost, latency, and business value. & Decides AI architecture by prioritizing data sovereignty and CI/CD integration. \\ \hline
+    Expert & Designs multimodal Generative AI systems and hyperparameter optimization. & Leads the full MLOps stack. Optimizes "Cold Start" and agent scalability. & Establishes corporate AI Governance frameworks and advanced ethical/legal compliance. & Defines the AI-First strategy, ensuring AI is a resilient component of the ecosystem. \\ \hline
+    \end{tabular}%
+    }
+\end{table}
+
+\subsection{Fundamental Knowledge Tree}
+
+\subsubsection{Level 1: Data and Modeling Fundamentals (Basic)}
+\begin{itemize}
+    \item \textbf{SQL for AI}: Feature Engineering through complex queries.
+    \item \textbf{Data Types}: Handling structured, unstructured, and semi-structured data for training.
+    \item \textbf{Learning Paradigms}: Practical differentiation between Supervised, Unsupervised, and Reinforcement Learning.
+    \item \textbf{Data Lifecycle}: Ingestion, cleaning, and preparation as the critical foundation of AI.
+\end{itemize}
+
+\subsubsection{Level 2: Architecture and Orchestration (Intermediate)}
+\begin{itemize}
+    \item \textbf{LLM Concepts}: Management of Tokens, Context Windows, and hallucination mitigation.
+    \item \textbf{Embeddings and Vectors}: Transforming concepts into mathematical vectors and storing them in Vector Databases.
+    \item \textbf{Pipeline Orchestration}: Using Airflow or Dagster to automate data flows to models.
+    \item \textbf{Initial MLOps}: Versioning models and data using tools like DVC (Data Version Control).
+\end{itemize}
+
+\subsubsection{Level 3: AI Systems Engineering (Advanced)}
+\begin{itemize}
+    \item \textbf{Optimization Strategies}: Technical choice between RAG (Retrieval-Augmented Generation) for dynamic context vs. Fine-Tuning for specialization.
+    \item \textbf{Inference and Deployment}: Optimization of Inference Latency, model quantization, and orchestration with agents (e.g., LangChain/Haystack).
+    \item \textbf{Governance and Security}: Implementation of "Guardrails," prompt injection mitigation, and privacy compliance (Data Residency).
+    \item \textbf{System Monitoring}: Detecting Model Drift and Data Drift in production environments.
+\end{itemize}

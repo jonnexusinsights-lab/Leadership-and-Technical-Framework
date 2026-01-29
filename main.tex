@@ -1,0 +1,49 @@
+\documentclass[12pt,a4paper]{report}
+
+% ==========================================
+%    Configuration and Preamble
+% ==========================================
+\input{config/preamble}
+
+% ==========================================
+%    Document Metadata
+% ==========================================
+\title{Leadership and Technical Framework}
+\author{Manager of Software Engineering Systems}
+\date{\today}
+
+\begin{document}
+
+% ==========================================
+%    Frontmatter
+% ==========================================
+\maketitle
+
+\begin{abstract}
+    This document serves as a comprehensive guide covering the Management Technical Knowledge Framework, Leadership Skills, and Standard Operating Procedures.
+\end{abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+
+% ==========================================
+%    Mainmatter
+% ==========================================
+
+% Introduction
+\include{chapters/introduction}
+
+% Frameworks
+\include{chapters/mtkf}
+\include{chapters/leadership}
+\include{chapters/sop}
+
+% ==========================================
+%    Backmatter
+% ==========================================
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
